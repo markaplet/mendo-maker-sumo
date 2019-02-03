@@ -41,6 +41,7 @@ If this is your first time experimenting with hardware or new to coding check ou
 * [Lesson 3 - Operating a DC motor](tutorials/lesson-3-dc-motors.ino)
 * [Lesson 4 - Reading IR Codes](tutorials/lesson-4-ir-codes.ino)
 * [Lesson 5 - Decision making based on IR code](tutorials/lesson-5-ir-logic.ino)
+* [Lesson 6 - Ultrasonic Sensors](tutorials/lesson-6-ultrasonic.ino)
 
 Combine all of these skills to build your sumobot! As with most programming exercises, it's best to prototype your bot and code in small chunks checking each new feature or change as you go. It's easier to catch a mistake when you are testing a small piece of code and not disassembling hardware from the chassis.
 
@@ -68,6 +69,7 @@ The sumobot chassis is laser cut from 3mm plywood and can be assembled with noth
   * [Ifrared Diode Schematic](http://www.circuitbasics.com/wp-content/uploads/2017/05/IR-Receiver-Stand-Alone-Pinout-Diagram.png)
   * [Micro Servo Motor Schematic](https://components101.com/sites/default/files/component_pin/Servo-Motor-Wires.png)
   * [New Ping Ultrasonic Library](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home)
+    * [Ultrasonic Schematic](https://components101.com/sites/default/files/component_pin/Ultrasonic-sensor-pinout.png)
 
 
 ## Issues

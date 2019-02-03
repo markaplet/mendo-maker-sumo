@@ -36,11 +36,11 @@ The goal of this project is to introduce basic robotics concepts through a 1 day
 
 If this is your first time experimenting with hardware or new to coding check out the included tutorials. Each lesson covers one aspect of the sumobot integration. At the end you will have a fundamental understanding of how each component works and how you could control them.
 
-* Lesson 1 - Hello World LED Blink
-* Lesson 2 - Operating a servo
-* Lesson 3 - Operating a DC motor
-* Lesson 4 - Reading IR Codes
-* Lesson 5 - Decision making based on IR code
+* [Lesson 1 - Hello World LED Blink](tutorials/lesson-1-led-blink.ino)
+* [Lesson 2 - Operating a servo](tutorials/lesson-2-servo-motor.ino)
+* [Lesson 3 - Operating a DC motor](tutorials/lesson-3-dc-motors.ino)
+* [Lesson 4 - Reading IR Codes](tutorials/lesson-4-ir-codes.ino)
+* [Lesson 5 - Decision making based on IR code](tutorials/lesson-5-ir-logic.ino)
 
 Combine all of these skills to build your sumobot! As with most programming exercises, it's best to prototype your bot and code in small chunks checking each new feature or change as you go. It's easier to catch a mistake when you are testing a small piece of code and not disassembling hardware from the chassis.
 

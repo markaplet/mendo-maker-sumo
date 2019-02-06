@@ -36,12 +36,14 @@ The goal of this project is to introduce basic robotics concepts through a 1 day
 
 If this is your first time experimenting with hardware or new to coding check out the included tutorials. Each lesson covers one aspect of the sumobot integration. At the end you will have a fundamental understanding of how each component works and how you could control them.
 
-* [Lesson 1 - Hello World LED Blink](tutorials/lesson-1-led-blink.ino)
-* [Lesson 2 - Operating a servo](tutorials/lesson-2-servo-motor.ino)
-* [Lesson 3 - Operating a DC motor](tutorials/lesson-3-dc-motors.ino)
-* [Lesson 4 - Reading IR Codes](tutorials/lesson-4-ir-codes.ino)
-* [Lesson 5 - Decision making based on IR code](tutorials/lesson-5-ir-logic.ino)
-* [Lesson 6 - Ultrasonic Sensors](tutorials/lesson-6-ultrasonic.ino)
+Before you begin uploading your code to the arduino you may need to first install the [standard firmata](https://www.instructables.com/id/Arduino-Installing-Standard-Firmata/). Don't worry it's super simple.
+
+* [Lesson 1 - Hello World LED Blink](tutorials/lesson-1-led-blink/lesson-1-led-blink.ino)
+* [Lesson 2 - Operating a servo](tutorials/lesson-2-servo-motor/lesson-2-servo-motor.ino)
+* [Lesson 3 - Operating a DC motor](tutorials/lesson-3-dc-motors/lesson-3-dc-motors.ino)
+* [Lesson 4 - Reading IR Codes](tutorials/lesson-4-ir-codes/lesson-4-ir-codes.ino)
+* [Lesson 5 - Decision making based on IR code](tutorials/lesson-5-ir-logic/lesson-5-ir-logic.ino)
+* [Lesson 6 - Ultrasonic Sensors](tutorials/lesson-6-ultrasonic/lesson-6-ultrasonic.ino)
 
 Combine all of these skills to build your sumobot! As with most programming exercises, it's best to prototype your bot and code in small chunks checking each new feature or change as you go. It's easier to catch a mistake when you are testing a small piece of code and not disassembling hardware from the chassis.
 
@@ -67,10 +69,9 @@ The sumobot chassis is laser cut from 3mm plywood and can be assembled with noth
   * [Motor Shield Schematic](https://www.14core.com/wp-content/uploads/2015/07/L293D-Wired-4-Motor-with-servo.jpg)
 * [Arduino IRremote Library](http://z3t0.github.io/Arduino-IRremote/)
   * [Ifrared Diode Schematic](http://www.circuitbasics.com/wp-content/uploads/2017/05/IR-Receiver-Stand-Alone-Pinout-Diagram.png)
-  * [Micro Servo Motor Schematic](https://components101.com/sites/default/files/component_pin/Servo-Motor-Wires.png)
-  * [New Ping Ultrasonic Library](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home)
-    * [Ultrasonic Schematic](https://components101.com/sites/default/files/component_pin/Ultrasonic-sensor-pinout.png)
-
+* [Micro Servo Motor Schematic](https://components101.com/sites/default/files/component_pin/Servo-Motor-Wires.png)
+* [New Ping Ultrasonic Library](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home)
+  * [Ultrasonic Schematic](https://components101.com/sites/default/files/component_pin/Ultrasonic-sensor-pinout.png)
 
 ## Issues
 

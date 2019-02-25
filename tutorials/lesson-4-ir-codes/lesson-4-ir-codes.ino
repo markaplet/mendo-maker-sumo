@@ -46,7 +46,7 @@ decode_results results;
   "void" keyword indicates that the function is not expected to return any
   information to the larger program.
 
-   In this lesson we will setup the serial monitor so we can output the codes 
+   In this lesson we will setup the serial monitor so we can output the codes
    we decoded to the serial monitor.
 */
 void setup(){
@@ -66,9 +66,14 @@ void setup(){
   your bot. The code will be displayed on the serial monitor. Record the
   hexadecimal code printed for each key press. NOTE: Different brand
   remotes will send different codes. It may look like FF5AA5 or 20DFA25D.
-  Note that you may receive a 0XFFFFFFFF code when you press a key continuously.
+  Note that you may receive a FFFFFFFF code when you press a key continuously.
   Some remotes send the same code ofer and over again, some remotes send a
-  0XFFFFFFF to indicate that the key is continuously being pressed.
+  FFFFFFF to indicate that the key is continuously being pressed.
+
+  NOTE: The value for the code is actually a hexadecimal value and when we want
+  to use the value for say a comparison we will have to prepend '0x' to the number.
+  For example. If the value we wrote down from the serial monitor is '20DFA25D'
+  we will need to use '0x20DFA25D' in our program.
 
   This loop will constantly read the sent key and decode the hexadecimal value
   and print it to the serial monitor.

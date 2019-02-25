@@ -21,6 +21,7 @@ The goal of this project is to introduce basic robotics concepts through a 1 day
 * 2 plastic wheels
 * 1 90 degree servo motor
 * 1 Ultrasonic sensor with mounting bracket
+* 1 Infrared receiver and transmitter diode
 * 3 9v batteries
 * 1 9v battery clip
 * 1 6ft. USB Cable

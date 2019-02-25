@@ -53,8 +53,8 @@ Combine all of these skills to build your sumobot! As with most programming exer
 The sumobot chassis is laser cut from 3mm plywood and can be assembled with nothing more than a screwdriver and possibly some hot glue. While it's pretty durable it is still only wood and can splinter or break if handled roughly. For those that like to see a video, check out [Norfolk.js - Chassis Assembly video](https://www.youtube.com/watch?v=xHns3qxffYM)
 
 1. Mount the ball bearing holder to the bottom plate using two of the 3/8" screws
-2. Mount the Arduino Uno to the top plate using two of the 3/8" screws
-3. Attach a motor to each side plate using two of the 1"  bolts and nuts
+2. Mount the Arduino Uno to the top plate using two of the 3/8" screws. Orientate the USB plug to the rear of the sumobot
+3. Attach a motor to each side plate using two of the 1" bolts and nuts
 4. Insert the tabs for the bottom plate into the side plates
 5. Insert the top plate tabs into the side plate holes
 6. It may be necessary to add a dab of hot glue to the tabs to hold the chassis securely in place
@@ -63,6 +63,16 @@ The sumobot chassis is laser cut from 3mm plywood and can be assembled with noth
 9. Press the 5/8" ball bearing into the holder
 10. Install the motor shield on top of the Arduino
 11. Attach the battery clip to the shields EXT_PWR block
+
+## Wire Connections
+
+* Solder a red and black wire leads onto the tabs near the cap of of the motor
+  * Left = black
+  * Right = red
+* Install motor shield on top of Arduino. It will only fit one way
+* Plug the left motor wires into the M1 block of your shield
+* Plug the right motor wires into the M2 block of your shield
+* M1 and M2 block wiring: red | black | not used | red | black
 
 ## Additional Resources
 

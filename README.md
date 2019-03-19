@@ -8,6 +8,17 @@ The goal of this project is to introduce basic robotics concepts through a 1 day
 * [Install Arduino IDE](https://www.arduino.cc/en/main/software)
 * Infrared (IR) Remote
 
+## Installing Libraries
+For this workshop we will install two library files into our Arduino IDE. Libraries are a collection of code that makes it easy for you to connect to a sensor, display, module, etc. 
+
+For this workshop we will need to download the following two libraries:
+* [Adafruit Motor Shield v1.0](https://learn.adafruit.com/adafruit-motor-shield/library-install)
+* [Arduino IRremote](http://z3t0.github.io/Arduino-IRremote/)
+
+To install a new library into your Arduino IDE, open the IDE and click to the "Sketch" menu and then Include Library > Add .ZIP Library... You will be prompted to select the library you would like to add. Navigate to the .zip file's location and open it. The library should now be available to use.
+
+There are other methods of adding and managing libraries too. Check out the official [Arduino Library Install Guide](https://www.arduino.cc/en/Guide/Libraries) for step by step instructions and more information.
+
 ## Parts List
 
 * 1 SainSmart Arduino Uno
@@ -77,6 +88,7 @@ The sumobot chassis is laser cut from 3mm plywood and can be assembled with noth
 ## Additional Resources
 
 * [Adafruit - Using DC Motors](https://learn.adafruit.com/adafruit-motor-shield/using-dc-motors)
+* [Adafruit Motor Shield Library](https://learn.adafruit.com/adafruit-motor-shield/library-install)
   * [Motor Shield Schematic](https://www.14core.com/wp-content/uploads/2015/07/L293D-Wired-4-Motor-with-servo.jpg)
 * [Arduino IRremote Library](http://z3t0.github.io/Arduino-IRremote/)
   * [Ifrared Diode Schematic](http://www.circuitbasics.com/wp-content/uploads/2017/05/IR-Receiver-Stand-Alone-Pinout-Diagram.png)
@@ -86,6 +98,11 @@ The sumobot chassis is laser cut from 3mm plywood and can be assembled with noth
 
 ## Issues
 
-Both the DCMotor Library and the IRRemote library use the TIMER2 resource. This creates a problem when two libraries attempt to use the same resource and will cause your code to fail. The solution I found was to change  IRremoteInt.h to use TIMER1. Remove the comments for `#define IR_USE_TIMER1` on line 224. Then add `//` comments for line 225.
+Both the DCMotor Library and the IRRemote library use the TIMER2 resource. When two libraries attempt to use the same resource, it will cause your code to fail in some way. The solution I found was to change two lines in the IRremote library > boarddefs.h to use TIMER1. Remove the comments for `#define IR_USE_TIMER1` on line 152. Then add `//` comments for line 153. The completed change should look like this:
+
+```
+	#define IR_USE_TIMER1   // tx = pin 9
+	//#define IR_USE_TIMER2     // tx = pin 3
+```
 
 NewPing library also uses TIMER1 resource which [conflicts with other libraries](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Multiple%20Definition%20of%20%22__vector_7%22%20Error). NewPing.h library must be modified to disable the TIMMER_ENABLED value on line 153 by setting it to false

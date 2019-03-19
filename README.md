@@ -78,8 +78,8 @@ The sumobot chassis is laser cut from 3mm plywood and can be assembled with noth
 ## Wire Connections
 
 * Solder a red and black wire leads onto the tabs near the cap of of the motor
-  * Left = black
-  * Right = red
+  * Left = red (+)
+  * Right = black (-)
 * Install motor shield on top of Arduino. It will only fit one way
 * Plug the left motor wires into the M1 block of your shield
 * Plug the right motor wires into the M2 block of your shield

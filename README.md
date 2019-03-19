@@ -28,7 +28,8 @@ There are other methods of adding and managing libraries too. Check out the offi
   * 1 top panel
   * 1 bottom panel
   * 1 front plate
-* 2 motors
+* 2 gear motors
+* 2 black, 2 red wire leads for motors
 * 2 plastic wheels
 * 1 90 degree servo motor
 * 1 Ultrasonic sensor with mounting bracket
@@ -101,8 +102,8 @@ The sumobot chassis is laser cut from 3mm plywood and can be assembled with noth
 Both the DCMotor Library and the IRRemote library use the TIMER2 resource. When two libraries attempt to use the same resource, it will cause your code to fail in some way. The solution I found was to change two lines in the IRremote library > boarddefs.h to use TIMER1. Remove the comments for `#define IR_USE_TIMER1` on line 152. Then add `//` comments for line 153. The completed change should look like this:
 
 ```
-	#define IR_USE_TIMER1   // tx = pin 9
-	//#define IR_USE_TIMER2     // tx = pin 3
+#define IR_USE_TIMER1   // tx = pin 9
+//#define IR_USE_TIMER2     // tx = pin 3
 ```
 
 NewPing library also uses TIMER1 resource which [conflicts with other libraries](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Multiple%20Definition%20of%20%22__vector_7%22%20Error). NewPing.h library must be modified to disable the TIMMER_ENABLED value on line 153 by setting it to false

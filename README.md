@@ -107,3 +107,7 @@ Both the DCMotor Library and the IRRemote library use the TIMER2 resource. When 
 ```
 
 NewPing library also uses TIMER1 resource which [conflicts with other libraries](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Multiple%20Definition%20of%20%22__vector_7%22%20Error). NewPing.h library must be modified to disable the TIMMER_ENABLED value on line 153 by setting it to false
+
+## Final Code
+
+If you get totally stuck, run out of time, or for whatever reason you cannot get your bot programmed, I have written a [very basic starter program](tutorials/completed-code/completed-code.ino) to get you going. Use it only as a last resort. 

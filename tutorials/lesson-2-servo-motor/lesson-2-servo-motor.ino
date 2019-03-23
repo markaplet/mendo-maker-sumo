@@ -6,7 +6,10 @@
 */
 #include <Servo.h>
 
-
+/*
+    Define myservo as an object so it can be called by name later
+*/
+Servo myservo;
 
 /*
   Create a variable for storing the servo position. The position will be changed

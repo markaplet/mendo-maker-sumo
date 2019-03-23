@@ -25,7 +25,8 @@
 */
 const int RECV_PIN = 10;
 IRrecv irrecv(RECV_PIN);
-decode_results results;
+decode_results IRresults;
+unsigned long key_value = 0;
 
 
 

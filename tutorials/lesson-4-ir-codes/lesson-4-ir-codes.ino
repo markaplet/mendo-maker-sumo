@@ -36,8 +36,8 @@
 */
 const int RECV_PIN = 10;
 IRrecv irrecv(RECV_PIN);
-decode_results results;
-
+decode_results IRresults;
+unsigned long key_value = 0;
 
 
 
@@ -79,8 +79,8 @@ void setup(){
   and print it to the serial monitor.
 */
 void loop(){
-  if (irrecv.decode(&results)){
-        Serial.println(results.value, HEX);
+  if (irrecv.decode(&IRresults)){
+        Serial.println(IRresults.value, HEX);
         irrecv.resume();
   }
 }

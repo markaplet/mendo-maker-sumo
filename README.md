@@ -32,11 +32,11 @@ There are other methods of adding and managing libraries too. Check out the offi
 * 2 black, 2 red wire leads for motors
 * 2 plastic wheels
 * 1 90 degree servo motor
-* 1 Ultrasonic sensor with mounting bracket
+* 1 Ultrasonic sensor
 * 1 Infrared receiver and transmitter diode
 * 3 9v batteries
 * 1 9v battery clip
-* 1 6ft. USB Cable
+* 1 USB Cable
 * 1 plastic ball bearing holder
 * 1 5/8" ball bearing
 * 18 prototyping jumper wires
